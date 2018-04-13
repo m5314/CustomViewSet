@@ -63,7 +63,6 @@ class RadarView : View{
     }
 
     override fun onDraw(canvas: Canvas?) {
-
 //        //首先移动坐标原点到中心
         canvas?.translate((mWidth/2).toFloat(), (mHeight/2).toFloat())
         drawRadar(canvas)
