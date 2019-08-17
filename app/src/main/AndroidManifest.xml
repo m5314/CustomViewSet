@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".RadarActivity" />
         <activity android:name=".DragActivity"></activity>
+        <activity android:name=".CutActivity" />
     </application>
 
 </manifest>

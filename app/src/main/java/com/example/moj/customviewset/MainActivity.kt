@@ -18,12 +18,13 @@ class MainActivity : AppCompatActivity(),AdapterView.OnItemClickListener {
         when(p2){
             0 -> {startActivity(Intent(this, RadarActivity::class.java))}
             1 -> {startActivity(Intent(this, DragActivity::class.java))}
+            2 -> {startActivity(Intent(this, CutActivity::class.java))}
             else -> Toast.makeText(this,"当前版本过低，请先更新app",Toast.LENGTH_SHORT).show()
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val mTitles = arrayListOf("雷达图","DragHelper")
+        val mTitles = arrayListOf("雷达图","DragHelper", "图片裁剪")
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
